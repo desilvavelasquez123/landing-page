@@ -1,0 +1,38 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+nav, footer {
+    min-width: 100px;
+    max-width: 2000px;
+}
+
+nav, ul, footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    font-size: 18px;
+    list-style-type: none;
+    gap: 8px;
+}
+
+nav {
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.logo-text {
+    color: #f9faf8;
+    font-size: 24px;
+    padding: 8px;
+}
+
+ul {
+    padding: 32px;
+}
