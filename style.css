@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 0;
+    font-family: Roboto;
 }
 
 nav, footer {
@@ -17,12 +19,10 @@ nav, ul, footer {
     background-color: #1f2937;
     color: #e5e7eb;
     font-size: 18px;
-    list-style-type: none;
-    gap: 8px;
 }
 
 nav {
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     align-content: flex-start;
 }
@@ -30,9 +30,10 @@ nav {
 .logo-text {
     color: #f9faf8;
     font-size: 24px;
-    padding: 8px;
 }
 
 ul {
-    padding: 32px;
+    list-style-type: none;
+    gap: 16px;
+    padding: 8px;
 }
