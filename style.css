@@ -24,7 +24,6 @@ nav, ul, footer {
 nav {
     justify-content: space-around;
     align-items: flex-start;
-    align-content: flex-start;
 }
 
 .logo-text {
@@ -36,4 +35,69 @@ ul {
     list-style-type: none;
     gap: 16px;
     padding: 8px;
+}
+
+.signup-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    gap: 32px;
+    padding-bottom: 125px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    padding: 8px;
+}
+
+h1 {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: extra-bold;
+}
+
+.content-descriptor {
+    color: #e5e7eb;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.placeholder {
+    max-width: 300px;
+    max-height: 100px;
+}
+
+.signup {
+    max-width: 100px;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: auto;
+    padding-bottom: 125px;
+}
+
+h2 {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: extra-bold;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.image-card {
+    max-width: 125px;
+    flex-basis: 100%;
 }
