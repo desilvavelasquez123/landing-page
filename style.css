@@ -13,6 +13,11 @@ nav, footer {
     max-width: 2000px;
 }
 
+.signup-section, .info-section, .quote {
+    min-width: 300px;
+    max-width: 2000px;
+}
+
 nav, ul, footer {
     display: flex;
     flex-direction: row;
@@ -40,10 +45,9 @@ ul {
 .signup-section {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #1f2937;
-    gap: 32px;
     padding-bottom: 125px;
 }
 
@@ -51,24 +55,28 @@ ul {
     display: flex;
     flex-direction: column;
     max-width: 300px;
-    padding: 8px;
+    padding-left: 10px;
+    margin-top: -15px;
 }
 
 h1 {
     color: #f9faf8;
     font-size: 48px;
-    font-weight: extra-bold;
+    font-weight:bolder;
 }
 
 .content-descriptor {
     color: #e5e7eb;
     font-size: 18px;
     text-align: justify;
+    margin-top: -30px;
+    margin-bottom: 15px;
 }
 
 .placeholder {
-    max-width: 300px;
-    max-height: 100px;
+    width: 500px;
+    height: 200px;
+    border: 2px solid red;
 }
 
 .signup {
@@ -95,14 +103,26 @@ h2 {
     flex-flow: row wrap;
     gap: 32px;
     flex: 1;
+    min-width: 100px;
+    max-width: 2000px;
+    min-height: 200px;
+    max-height: 500px;
 }
 
 .image-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    min-width: 100px;
     max-width: 125px;
 }
 
 .card-img {
     margin-bottom: 8px;
+    border: 8px solid #3882f6;
+    height: 150px;
+    width: 100px;
 }
 
 .figcaption {
