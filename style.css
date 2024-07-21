@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 body {
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    margin: 0;
     font-family: Roboto;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 nav, footer {
@@ -13,12 +17,14 @@ nav, footer {
     max-width: 2000px;
 }
 
-.signup-section, .info-section, .quote {
+.signup-section, .info-section, .quote,.CTA-section {
     min-width: 300px;
     max-width: 2000px;
+    min-height: 300px;
+    max-height: 1000px;
 }
 
-nav, ul, footer {
+nav, ul, footer, .CTA-content {
     display: flex;
     flex-direction: row;
     background-color: #1f2937;
@@ -28,10 +34,13 @@ nav, ul, footer {
 
 nav {
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
+    padding: 20px;
+    padding-left: 4px;
 }
 
-.logo-text {
+
+.logo-text, h3 {
     color: #f9faf8;
     font-size: 24px;
 }
@@ -42,21 +51,35 @@ ul {
     padding: 8px;
 }
 
+.CTA-content, button {
+    font-size: 18px;
+    color: #e5e7eb;
+    background-color: #3882f6;
+    border: 4px solid #3882f6;
+    border-radius: 8px;
+}
+
+button {
+    width: 125px;
+    height: max-content;
+    padding: 4px;
+}
+
 .signup-section {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     background-color: #1f2937;
-    padding-bottom: 125px;
+    padding-bottom: 160px;
 }
 
 .content {
     display: flex;
     flex-direction: column;
     max-width: 300px;
-    padding-left: 10px;
-    margin-top: -15px;
+    margin-top: 20px;
+    margin-left: 125px;
 }
 
 h1 {
@@ -69,7 +92,6 @@ h1 {
     color: #e5e7eb;
     font-size: 18px;
     text-align: justify;
-    margin-top: -30px;
     margin-bottom: 15px;
 }
 
@@ -77,10 +99,8 @@ h1 {
     width: 500px;
     height: 200px;
     border: 2px solid red;
-}
-
-.signup {
-    max-width: 100px;
+    margin-top: 55px;
+    text-align: center;
 }
 
 .info-section {
@@ -95,7 +115,8 @@ h1 {
 h2 {
     color: #1f2937;
     font-size: 36px;
-    font-weight: extra-bold;
+    font-weight: bold;
+    padding: 32px;
 }
 
 .cards {
@@ -120,11 +141,83 @@ h2 {
 
 .card-img {
     margin-bottom: 8px;
-    border: 8px solid #3882f6;
+    border: 4px solid #3881f6;
+    border-radius: 25px;
     height: 150px;
     width: 100px;
+    text-align: center;
 }
 
 .figcaption {
     text-align: justify;
+}
+
+.quote {
+    background-color:#e5e7eb;
+    display: flex;
+    flex-direction: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-text, .quote-signature {
+    color: #1f2937;
+}
+
+.quote-text {
+    text-align: justify;
+    font-size: 36px;
+    font-style: italic;
+    padding: 128px;
+}
+
+.quote-signature {
+    text-align: right;
+    font-weight: bold;
+    margin-top: -110px;
+    margin-bottom: 110px;
+    margin-left: 550px;
+    margin-right: -500px;
+}
+
+.CTA-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.CTA-content {
+    display: inherit;
+    flex-direction: inherit;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    gap: 128px;
+    min-width: 1000px;
+    max-width: 2000px;
+    min-height: 128px;
+    padding: 32px;
+}
+
+.CTA-info {
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.last-btn {
+    align-self: flex-end;
+    border: 4px solid #f9faf8;
+}
+
+footer {
+    padding: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span {
+    text-align: center;
 }
